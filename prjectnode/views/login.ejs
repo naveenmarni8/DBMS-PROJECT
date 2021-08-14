@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="pub/login.css">
+    <title>Login Page</title>
+  </head>
+  <body>
+  <div class="heading">
+    <h2>Login Page</h2>
+  </div>
+  <div id="formContent">
+  <form action="/login" class="inp" method="POST">
+  <div class="inp">
+    <label for="email">Enter your email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter Your email" value="" required>
+  </div>
+  <div class="inp">
+    <label for="password">password:</label>
+    <input type="password" placeholder="Enter Your Password" name="password" id="password" value="" required>
+  </div>
+  <div class="submit">
+    <a class="reg" href="register" target="_blank"><button type="button" name="button">No Account?</button></a>
+    <a><input type="submit" value="Login"></a>
+  </div>
+</form>
+  </div>
+<footer>
+  <% if(message) { %>
+    <h3><%= message %></h3>
+    <% } %>
+</footer>
+
+  </body>
+</html>

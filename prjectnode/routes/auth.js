@@ -1,0 +1,11 @@
+const { render } = require('ejs');
+const express= require('express');
+const router= express.Router();
+const authController=require('../controllers/auth');
+router.post('/search',authController.search);
+router.post('/register',authController.register);
+router.post('/login',authController.login);
+router.post('/userpage',authController.userpage);
+router.post('/imageeupload',authController.imageeupload);
+router.get('/logout',authController.logout);
+module.exports= router;

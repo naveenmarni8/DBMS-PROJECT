@@ -1,0 +1,142 @@
+body
+{
+   /* background-color: #fff;*/
+    background-image: url("https://cutewallpaper.org/21/background-design-hd/Abstract-Space-Background-Geometry-Surfaces-Lines-Green-.png");
+    /*margin: 25px 50px;*/
+    margin: 0px;
+}
+.result{
+font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.top-bar
+{
+    background-color: #FF4C68;
+    padding: 15px;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    height: 25px;
+}
+.top-bar > form
+{
+    position: absolute;
+    border-color: #000;
+    left: 65%;
+    display: inline;
+}
+.top-bar > form >input
+{
+    height: 1.4rem;
+
+    width: 20rem;
+    border-radius: 5px; 
+    background-color: #fff;
+}
+.sticky
+{
+   position: fixed;
+   top: 0;
+   margin-top: 0px;
+}
+.top-bar > a
+{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.top-bar > a:hover
+{
+    color: #0000A0;
+    background-color: #fff;
+}
+
+#main
+{
+    margin: 50px 100px 20px 100px;
+    display: flex;
+   
+}
+#main > form 
+{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 850px;
+    padding-left: 10px;
+    padding-bottom: 1rem;
+    border-style: solid;
+   border-color: black;
+   margin-left: 250px;
+}
+.prof
+{
+    margin-left: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.inp
+{
+  display: grid;
+  grid-template-columns: 20em 20em auto;
+  padding: 10px 50px;
+}
+.inp > label
+{
+    font-weight: bolder;
+}
+.inp > input
+{
+    grid-column: 2/3;
+    height: 1.5rem;
+    border-radius: 0.5em;
+    border-width: 0.2px;
+}
+.instxt
+{
+    margin: 0;
+    font-weight: bolder;
+    border-style: solid;
+    height: 1.2rem;
+    padding: 3px 15px;
+    border-radius: 5px;
+    border-width: 0.4px;
+}
+.submit
+{
+    margin-left: 50%;
+    color: #000;
+}
+.prof > img
+{
+    width: 45%;
+    height: 45%;
+    padding: 10% 25%;
+    border-radius: 45%;
+}
+.prof > form > input
+{
+    padding-left: 17%;
+}
+hr
+{
+    border-width: 0.001px;
+    color: rgba(245, 243, 243, 0.431);
+}
+footer
+{
+    height: 200px;
+}
+footer > p
+{
+    position: absolute;
+    left: 500px;
+    color: red;
+    font-weight: bolder;
+}

@@ -1,0 +1,75 @@
+#title{
+    background-color: #ff4c68;
+}
+#features{
+    padding: 7% 15%;
+}
+.horizon{
+    color: black;
+}
+.cls{
+    font-family: 'Bangers', cursive;
+}
+.result{
+font-family: 'Shadows Into Light', cursive;
+    font-size: 150px;
+}
+#testimonials{
+    padding-top: 5%;
+    text-align: center;
+    background-color: #ff4c68;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 150px;
+    font-family: 'Hammersmith One', sans-serif;
+  }
+.row{
+    margin-top: 50px;
+}
+.im{
+    margin-top: 0;
+    max-width: 140%;
+    max-height: 120%;
+}
+.peek{
+    margin-right: 20px;
+}
+.meet{
+color: white;
+font-family: 'Hammersmith One', sans-serif;
+margin-bottom: 20px;
+}
+.container-fluid{
+    padding: 3% 15%;
+}
+.demo{
+    max-width: 50%;
+    max-height: 50%;
+}
+.feature-box{
+    text-align: center;
+}
+.icon{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 1rem;
+    color: #ef8172;
+  }
+  .icon:hover{
+    color: #ff4c68;
+  }
+.img1{
+    align-items: center;
+    width: 15%;
+    border-radius: 50%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+  }
+  #press{
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 5%;
+  }

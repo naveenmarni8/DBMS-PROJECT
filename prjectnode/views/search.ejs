@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="pub/search.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1145a7469.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <a class="navbar-brand rest result" href="">CONNECTG!</a>
+    <div class="top-bar">
+    <a href="/">Home</a>
+    <a href="/userpage">Profile</a>
+    <a href="/logout">Logout</a>
+    <form method="post" action="/search">
+        <input type="text" name="search" placeholder="search" style="margin : 0px;">
+        <button type="submit" style="background-color: #fff; margin : 0px;"><i class="fab fa-searchengin" style="font-size: 1.3em;" ></i></button>
+        </form>
+    </form>
+    </div>
+    <section id="main">
+        <form action="/auth/search" method="post" >
+            <div class="inp">
+                <label for="text">Full Name</label>
+                <p class="instxt">
+                <%= details['fullname']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="text">Registration Number</label>
+                <p class="instxt">
+                  <%= details['regno']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="email">Email</label>
+                <p class="instxt"> 
+                  <%= details['email']  %> 
+                </p>
+              </div>
+             
+              <hr>
+              <div class="inp">
+                <label for="text">Institute</label>
+                <p class="instxt">
+                  <%= details['institute']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="text">Year of Studying</label>
+                <p class="instxt">
+                  <%= details['year_of_studying']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="text">Section</label>
+                <p class="instxt">
+                  <%= details['section']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="text">Enrolled In</label>
+                <p class="instxt">
+                  <%= details['stchapter']  %> 
+                </p>
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="text">Phone Number</label>
+                <p class="instxt">
+                  <%= details['phone_number']  %> 
+                </p>
+              </div>
+              <hr>
+        </form>
+    </section>
+   <footer>
+   <p>
+     <% if(details['usernotfound']) { %>
+      User not found
+      <% } %>
+      <% if(details['invalidity']) { %>
+        Invalid Search
+        <% } %>
+   </p>
+   </footer>
+    <script src="pub/pr.js">
+      
+    </script>
+</body>
+</html>

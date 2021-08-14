@@ -1,0 +1,77 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pub/user.css">
+
+</head>
+<body>
+    <a class="navbar-brand rest result" href="">CONNECTG!</a>
+    <div class="top-bar">
+    <a href="/">Home</a>
+    <a href="/search">Search Page</a>
+    <a href="/logout">Logout</a>
+    </div>
+    <section id="main">
+        <form method='post' action="/userpage">
+            <div class="inp">
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Enter Your Full Name:" name="fullname" id="full-name" value="<%= message['fullname']%>" required="true">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="rgno">Registration Number</label>
+                <input type="text" placeholder="Registration Number" name="rgno" id="rgno" value="<%= message['regno'] %>" required="true">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Your email" name="email" id="email" value="<%= message['email'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="password">Password</label>
+                <input type="text" placeholder="Enter Your Password" id="password" name="password" value="<%= message['password'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="inst">Institute</label>
+                <input type="text" placeholder="Institute" name="inst" id="inst" value="<%= message['institute'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="yst">Year of Studying</label>
+                <input type="text" placeholder="Year" name="yst" id="yst" value="<%= message['year_of_studying'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="sec">Section</label>
+                <input type="text" placeholder="Your Section" id="sec" name="sec" value="<%= message['section'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="stchapter">Enrolled In</label>
+                <input type="text" placeholder="Student Chapters" id="stchapter" name="stchapter" value="<%= message['stchapter'] %>">
+              </div>
+              <hr>
+              <div class="inp">
+                <label for="phn">Phone Number</label>
+                <input type="text" placeholder="Phone Number" id="phn" name="phn" value="<%= message['phone_number'] %>">
+              </div>
+              <hr>
+              <div class="submit">
+                <input type="submit" value="Update">
+              </div>
+              <input type="hidden" name="id" value="<%= message['id'] %>" />
+        </form>
+    </section>
+    <script src="pr.js">
+      
+    </script>
+</body>
+</html>
